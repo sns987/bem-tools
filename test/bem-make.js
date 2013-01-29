@@ -60,7 +60,7 @@ describe('bem', function() {
 
             collectTimestamps(buildPath)
                 .then(function(timestamps) {
-                    return BEM.api.make({root: buildPath, verbosity: 'info'})
+                    return BEM.api.make({root: buildPath, verbosity: 'error'})
                         .then(function() {
                             return collectTimestamps(buildPath);
                         })
